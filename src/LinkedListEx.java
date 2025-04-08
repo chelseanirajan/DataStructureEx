@@ -123,6 +123,9 @@ public class LinkedListEx {
         length--;
         return temp.value;
     }
+    public void reverse(){
+
+    }
 
     public static void main(String[] args) {
         LinkedListEx ex = new LinkedListEx(2);
