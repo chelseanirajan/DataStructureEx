@@ -124,7 +124,15 @@ public class LinkedListEx {
         return temp.value;
     }
     public void reverse(){
-
+        Node temp = head;
+        head = tail;
+        tail = temp;
+        Node prev = null;
+        while(temp != null){
+            tail = prev;
+            prev = temp;
+            temp = temp.next;
+        }
     }
 
     public static void main(String[] args) {
